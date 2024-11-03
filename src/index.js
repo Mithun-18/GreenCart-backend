@@ -1,5 +1,6 @@
 import { app } from "./app.js";
 import { checkConnection } from "./db/index.js";
+import { CategoryModel } from "./models/index.js";
 
 const port = process.env.PORT || 3000;
 
