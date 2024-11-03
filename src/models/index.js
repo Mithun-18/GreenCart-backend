@@ -42,8 +42,22 @@ const productSchema = mongoose.Schema({
   },
 });
 
+const wishlistSchema = mongoose.Schema({
+  userId: {
+    type: String,
+    required: true,
+  },
+  productId: {
+    type: Number,
+    required: true,
+  },
+});
+
 const CategoryModel = mongoose.model("category", categorySchema);
 
 const ProductModel = mongoose.model("products", productSchema);
 
-export { CategoryModel, ProductModel };
+const WishlistModel = mongoose.model("wishlist", wishlistSchema);
+
+export { CategoryModel, ProductModel, WishlistModel };
+

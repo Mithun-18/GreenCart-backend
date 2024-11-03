@@ -1,5 +1,5 @@
-import express from "express";
 import cors from "cors";
+import express from "express";
 import path, { dirname } from "path";
 import { fileURLToPath } from "url";
 
@@ -26,3 +26,4 @@ app.use("/", (_, res) => {
 });
 
 export { app };
+
